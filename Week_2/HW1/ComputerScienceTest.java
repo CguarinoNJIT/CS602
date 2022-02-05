@@ -8,6 +8,7 @@ public class ComputerScienceTest {
         System.out.println(course1); 
         System.out.println(course2); 
         System.out.println(course3);
+        System.out.println(course2.getCourseName()); 
     }
     
 }

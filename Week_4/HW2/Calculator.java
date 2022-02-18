@@ -9,6 +9,8 @@ import java.awt.event.ActionListener;
 
 public class Calculator extends JFrame{
 
+    JTextField input1 = new JTextField(); 
+    JTextField input2 = new JTextField(); 
     public static void main(String[] args){
         new Calculator().display(); 
     }
@@ -17,11 +19,30 @@ public class Calculator extends JFrame{
         Container c = getContentPane(); 
         c.setLayout(null);
 
-        inputTextBox goat = inputTextBox(goat);
+        input1.setBounds(100,40,10,10); 
+        input2.setBounds(100,100,20,5);
+
+
+        c.add(input1); 
+        c.add(input2);
         setVisible(true);
     }
-    private void inputTextBox(JTextField name){
-        name = new JTextField(); 
-        name.setBounds(100,40,100,20); 
+
+    //Arithmetic 
+    public static float Addition(float x, float y){
+        float z = x + y; 
+        return z; 
+    }
+    public static float Subtraction(float x, float y){
+        float z = x - y; 
+        return z; 
+    }
+    public static float Multiplication(float x, float y){
+        float z = x * y; 
+        return z; 
+    }
+    public static float Division(float x, float y){
+        float z = x / y; 
+        return z; 
     }
 }

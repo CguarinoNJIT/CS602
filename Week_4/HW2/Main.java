@@ -10,7 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener; 
 
 
-public class Calculator extends JFrame implements ActionListener{
+public class Main extends JFrame implements ActionListener{
 
     //Element Definitions
     JTextField input1 = new JTextField(); 
@@ -26,7 +26,7 @@ public class Calculator extends JFrame implements ActionListener{
     ButtonGroup group = new ButtonGroup(); 
 
     public static void main(String[] args){
-        new Calculator().display(); 
+        new Main().display(); 
     }
 
     private void display(){

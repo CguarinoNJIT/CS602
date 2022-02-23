@@ -17,8 +17,8 @@ public class Main extends JFrame implements ActionListener{
     JTextField input2 = new JTextField(); 
     JTextField output = new JTextField(); 
     JRadioButton add_button = new JRadioButton("+"); 
-    JRadioButton subtraciton_button = new JRadioButton("-"); 
-    JRadioButton multiplation_button = new JRadioButton("*"); 
+    JRadioButton subtraction_button = new JRadioButton("-"); 
+    JRadioButton multiplication_button = new JRadioButton("*"); 
     JRadioButton divide_button = new JRadioButton("/"); 
     JLabel equal = new JLabel("=");
 
@@ -44,20 +44,20 @@ public class Main extends JFrame implements ActionListener{
         output.setBounds(290,50,85,30);
         equal.setBounds(265,55,20,20);
         add_button.setBounds(120,15,50,30);
-        subtraciton_button.setBounds(120,35,50,30);
-        multiplation_button.setBounds(120,55,50,30);
+        subtraction_button.setBounds(120,35,50,30);
+        multiplication_button.setBounds(120,55,50,30);
         divide_button.setBounds(120,75,50,30); 
 
         //Add all Radio Buttons to Button Groups.
         group.add(add_button);
-        group.add(subtraciton_button);
-        group.add(multiplation_button);
+        group.add(subtraction_button);
+        group.add(multiplication_button);
         group.add(divide_button);
 
         //Listener for each RadioButton.
         add_button.addActionListener(this);
-        subtraciton_button.addActionListener(this);
-        multiplation_button.addActionListener(this);
+        subtraction_button.addActionListener(this);
+        multiplication_button.addActionListener(this);
         divide_button.addActionListener(this);
         
         //Add elements to the ContentPane
@@ -66,8 +66,8 @@ public class Main extends JFrame implements ActionListener{
         c.add(output);
         c.add(equal);
         c.add(add_button); 
-        c.add(subtraciton_button);
-        c.add(multiplation_button);
+        c.add(subtraction_button);
+        c.add(multiplication_button);
         c.add(divide_button);
         setVisible(true);
     } 

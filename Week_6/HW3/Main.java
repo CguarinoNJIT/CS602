@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+//Routing
 @WebServlet("/Main") 
 
 public class Main extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {
@@ -69,7 +70,7 @@ public class Main extends javax.servlet.http.HttpServlet implements javax.servle
         out.println(
             "<html>\n" +
             "<head><title>" + title + "</title></head>\n" +
-            "<body bgcolor=\"#90EE90\">\n" +
+            "<body bgcolor=\"#fcba03\">\n" +
             "<h1 align=\"center\">" + title + "</h1>\n" +
             "<ul>\n" +
             "Thank You " + " " + gender + " " + first_name + " " +

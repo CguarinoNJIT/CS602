@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/christopherguarino/Java/Libraries/javax.servlet-api-3.0.1.jar"
+    ]
+}
